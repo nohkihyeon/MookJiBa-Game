@@ -47,29 +47,43 @@ public class GameModel {
 	 * 승자가 있으면 playingMookJiBa 값을 false로 설정해야 함
 	 * @return 묵찌바의 결과를 반환함
 	 */ 
+//	public GameResult playMookJiBa() {
+//		HandType computerHand = computer.getHand();
+//		if (userHand == computerHand) {
+//			playingMookJiBa = false;
+//			return isUserAttack? GameResult.USERWIN : GameResult.COMPUTERWIN; 
+//		}
+//		computer.setLastUserHand(userHand);
+//		isUserAttack = userHand.winValueOf() == computerHand;
+//		computer.setPlayingMode(isUserAttack);
+//		
+//		return GameResult.DRAW;
+//	}
 	public GameResult playMookJiBa() {
-		HandType computerHand = computer.getHand();
-		if (userHand == computerHand) {
-			playingMookJiBa = false;
-			return isUserAttack? GameResult.USERWIN : GameResult.COMPUTERWIN; 
+		  if(userHand==computer.getHand()) {
+		   playingMookJiBa = false;
+		   return isUserAttack? GameResult.USERWIN: GameResult.COMPUTERWIN; 
+		  }
+		   isUserAttack = computer.getHand().winValueOf()==userHand;
+		  return GameResult.DRAW;
 		}
-		computer.setLastUserHand(userHand);
-		isUserAttack = userHand.winValueOf() == computerHand;
-		computer.setPlayingMode(isUserAttack);
-		
-		return GameResult.DRAW;
-	}
 	/**
 	 * userHand와 computer.getHand()의 값을 비교하여 가위바위보의 결과를 반환함
 	 * 승자가 있으면 playingMookJiBa 값을 true로 설정해야 함
 	 * @return 묵찌바의 결과를 반환함
 	 */ 
+//	public GameResult playGawiBawiBo() {
+//		computer.setLastUserHand(null);
+//		HandType computerHand = computer.getHand();
+//		if (userHand == computerHand) return GameResult.DRAW;
+//		playingMookJiBa = true;
+//		if (userHand.winValueOf() == computerHand) return GameResult.COMPUTERWIN;
+//		else return GameResult.USERWIN;
+//	}
 	public GameResult playGawiBawiBo() {
-		computer.setLastUserHand(null);
-		HandType computerHand = computer.getHand();
-		if (userHand == computerHand) return GameResult.DRAW;
-		playingMookJiBa = true;
-		if (userHand.winValueOf() == computerHand) return GameResult.COMPUTERWIN;
-		else return GameResult.USERWIN;
-	}
+		  if(userHand==computer.getHand()) return GameResult.DRAW;
+		  isUserAttack = computer.getHand().winValueOf()==userHand;
+		  playingMookJiBa = true;
+		  return isUserAttack? GameResult.USERWIN: GameResult.COMPUTERWIN; 
+		}
 }
