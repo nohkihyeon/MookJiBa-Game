@@ -4,10 +4,10 @@
 - RadioButton을 이용해 3개의 묵찌빠를 선택
 
 ## GameModel
-- PlayingMookJiBa와 묵찌빠엣 현재 누가 공격하고 있는지를 나타내는 isUserAttack르 유지하 있다.
+- PlayingMookJiBa와 묵찌빠엔 현재 누가 공격하고 있는지를 나타내는 isUserAttack르 유지하고 있다.
 
 ## GameResult
-- 게임으 결과를 나타내는 열거혀 타입
+- 게임으 결과를 나타내는 열거형 타입
 - 열거형 : MOOK, JI, BA
 
 ## ComputerPlayer class
