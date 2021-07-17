@@ -2,7 +2,7 @@ import javafx.scene.image.Image;
 
 /**
  * 한국기술교육대학교 컴퓨터공학부 객체지향개발론및실습
- * @version 2020년도 2학기 
+ * @version 2021.07
  * HandType.java
  * 묵찌바, 가위바위보 게임 관련 손 모습을 나타내는 열거형
  * @author 2016136035 노기현 

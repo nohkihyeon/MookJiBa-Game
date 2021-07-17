@@ -17,7 +17,7 @@ import javafx.util.Duration;
 
 /**
  * 한국기술교육대학교 컴퓨터공학부 객체지향개발론및실습
- * @version 2019년도 2학기 
+ * @version 2021.07
  * GameView.java: 부모 클래스: javafx.scene.layout.BorderPane
  * View와 Controller가 결합되어 있는 형태
  * 사용자에게 보여지는 부분과 사용자의 입력 처리

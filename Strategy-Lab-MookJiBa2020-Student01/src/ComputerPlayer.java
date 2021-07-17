@@ -2,10 +2,10 @@ import java.util.Objects;
 
 /**
  * 한국기술교육대학교 컴퓨터공학부 객체지향개발론및실습
- * @version 2020년도 2학기 
+ * @version 2021.07
  * 전략 패턴
  * ComputerPlayer.java: 전략을 활용하는 클라이언 클래스
- * @author 2016136035 노기현 
+ * @author 노기현 
  */
 public class ComputerPlayer{
 	private HandType hand;

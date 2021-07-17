@@ -1,13 +1,14 @@
 /**
  * 한국기술교육대학교 컴퓨터공학부 객체지향개발론및실습
- * @version 2020년도 2학기 
+ * @version 2021.07
  * GameModel.java: 
  * 묵찌바 게임에 필요한 데이터와 게임논리 구현
- * @author 2016136035 노기현 
+ * @author 노기현 
  */
 public class GameModel {
-	private ComputerPlayer computer 
-		= new ComputerPlayer(new RandomStrategy());
+	private ComputerPlayer computer
+		= new ComputerPlayer(new lastHandBaseStrategy());
+//		= new ComputerPlayer(new RandomStrategy());
 	private HandType userHand = HandType.MOOK;
 	private boolean playingMookJiBa = false;
 	private boolean isUserAttack = false;
